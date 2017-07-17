@@ -1,0 +1,17 @@
+service: test-webhook-endpoint
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+
+functions:
+  webhookConsumer:
+    handler: handler.endpoint
+    environment:
+      WEBHOOK_TOKEN: "SAMPLE_WEBHOOK_TOKEN"
+    events:
+      - http:
+          path: webhook
+          method: post
