@@ -3,7 +3,7 @@ var crypto = require('crypto');
 
 module.exports.endpoint = (event, context, callback) => {
 
-  var securityHeader = event.headers['x-mbsy-hmac-sha256'];
+  var securityHeader = event.headers['X-MBSY-HMAC-SHA256'];
   const hmac = crypto.createHmac('sha256', process.env.WEBHOOK_TOKEN); 
   hmac.update(event.body);
   const validationToken = hmac.digest('base64');
