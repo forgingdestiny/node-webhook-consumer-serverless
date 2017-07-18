@@ -9,6 +9,9 @@ Example code to demonstrate how to setup a simple HTTP POST endpoint to consume 
 
 Based on: https://github.com/serverless/examples/tree/master/aws-node-simple-http-endpoint from [serverless](https://serverless.com/).
 
+**Read more about this on the "Inside the Embassy" Blog**: 
+https://inside.getambassador.com/serverless-creating-a-webhook-consumer-in-5-minutes-4136adab06b0
+
 ## Use Cases
 
 - Consuming webhook data from a third-party API or service
