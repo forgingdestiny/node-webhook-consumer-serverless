@@ -1,7 +1,7 @@
 {
   "name": "test-webhook-endpoint",
   "version": "1.0.0",
-  "description": "Example demonstrates how to setup a simple HTTP GET endpoint",
+  "description": "Consuming webhook data from a third-party API or service",
   "author": "",
   "license": "MIT"
 }
